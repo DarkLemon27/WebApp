@@ -2,7 +2,7 @@
 <script>
     var e = document.getElementById("hid");
     e.addEventListener("load",function(){
-       var cont= e.contentWindow.document.body.innerHTML.match('^[^<br]*');
+       var cont= e.contentWindow.document.body.innerHTML.match('^[^<br]*').match('[^,]*');
        alert(cont);
    });
 </script>
