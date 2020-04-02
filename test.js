@@ -1,6 +1,7 @@
 function moveitmoveit() {
     alert(1);
     var eff = document.getElementById("hiddenone");
+    alert(eff);
     eff.addEventListener("load",function(){
        var conter= eff.contentWindow.document.body.innerHTML.match('^[^<br]*');
        var cant= conter.split(',');
