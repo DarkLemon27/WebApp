@@ -3,9 +3,8 @@ function moveitmoveit() {
     eff.addEventListener("load",function(){
        var conter= eff.contentWindow.document.body.innerHTML.match('^[^<br]*');
        alert(conter);
-       var cant= conter.split(',');
-       alert(cant[0]);
-       alert(cant[1]);
+       alert(conter[0]);
+       alert(conter[1]);
    });
 }
 moveitmoveit();
