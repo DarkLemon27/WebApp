@@ -1,4 +1,4 @@
-function() {
+function moveitmoveit() {
     alert(1);
     var eff = document.getElementById("hiddenone");
     eff.addEventListener("load",function(){
@@ -8,3 +8,4 @@ function() {
        alert(cant[1]);
    });
 }
+moveitmoveit();
