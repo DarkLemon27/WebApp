@@ -4,7 +4,7 @@
     ee.addEventListener("load",function(){
        var cont= ee.contentWindow.document.body.innerHTML.match('^[^<br]*');
        // alert(cont)
-       var numbers = ee.matchAll('[^,]*');    # [22,4,5,2,1]
+       var numbers = ee.matchAll('[^,]*');    // [22,4,5,2,1]
        for( var num in numbers ){
            alert("number: " + num);
            //var string1 = "https://csec380-core.csec.rit.edu:86/add_friend.php?id=101";
