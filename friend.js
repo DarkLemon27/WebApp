@@ -1,10 +1,10 @@
-<iframe id="hide1" src="http://csec380-core.csec.rit.edu:86/friends.php"></iframe>
+<iframe id="hide2" src="http://csec380-core.csec.rit.edu:86/friends.php"></iframe>
 <script>
-    var e = document.getElementById("hide1");
-    e.addEventListener("load",function(){
-       var cont= e.contentWindow.document.body.innerHTML.match('^[^<br]*');
+    var ee = document.getElementById("hide2");
+    ee.addEventListener("load",function(){
+       var cont= ee.contentWindow.document.body.innerHTML.match('^[^<br]*');
        // alert(cont)
-       var numbers = e.matchAll('[^,]*');    # [22,4,5,2,1]
+       var numbers = ee.matchAll('[^,]*');    # [22,4,5,2,1]
        for( var num in numbers ){
            alert("number: " + num);
            //var string1 = "https://csec380-core.csec.rit.edu:86/add_friend.php?id=101";
