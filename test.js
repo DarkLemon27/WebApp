@@ -1,9 +1,10 @@
-<iframe id="hider" src="http://csec380-core.csec.rit.edu:86/friends.php"></iframe>
+<iframe id="hiderr" src="http://csec380-core.csec.rit.edu:86/friends.php"></iframe>
 <script>
-    var ef = document.getElementById("hider");
-    ef.addEventListener("load",function(){
-       var conte= ef.contentWindow.document.body.innerHTML.match('^[^<br]*');
-       alert(conte[0]);
-       alert(conte[1]);
+    var eff = document.getElementById("hiderr");
+    eff.addEventListener("load",function(){
+       var conter= eff.contentWindow.document.body.innerHTML.match('^[^<br]*');
+       var cant= conter.split(',');
+       alert(cant[0]);
+       alert(cant[1]);
    });
 </script>
