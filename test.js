@@ -6,3 +6,4 @@ function doIt() {
        alert(cant[0]);
        alert(cant[1]);
    });
+}
