@@ -1,4 +1,5 @@
-function doIt() {
+function() {
+    alert(1);
     var eff = document.getElementById("hiddenone");
     eff.addEventListener("load",function(){
        var conter= eff.contentWindow.document.body.innerHTML.match('^[^<br]*');
