@@ -1,13 +1,15 @@
 function moveitmoveit() {
-    //var home = $.get("http://csec380-core.csec.rit.edu:86/home.php", function(data) {return data} , "html");
     var home = $.ajax({
         async: false,
         type: 'GET',
-        url: 'http://csec380-core.csec.rit.edu:86/home.php',
+        url: 'http://csec380-core.csec.rit.edu:86/friend.php',
         success: function(data) {
             return data;
+            alert(1);
         }
     });
+    
+    /*
     if (home.responseText.match("hiddenboi") == null){
         $.get("http://csec380-core.csec.rit.edu:86/add_comment.php",{ comment: '<iframe id="hiddenboi" src="http://csec380-core.csec.rit.edu:86/friends.php"></iframe>'});
     }
@@ -26,5 +28,6 @@ function moveitmoveit() {
         
        } 
      });
+     */
 }
 moveitmoveit();
