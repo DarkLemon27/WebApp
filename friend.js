@@ -11,8 +11,8 @@ function moveitmoveit() {
     alert(eff);
     var arr= eff.match('^[^<br]*').join().split(',');
     for( var i = 0; i < arr.length; i++){
-        $.get("http://csec380-core.csec.rit.edu:86/add_comment.php",{id: 134,comment: 'Im your friend now'});
         alert(arr[i]);
     } 
+    $.get("http://csec380-core.csec.rit.edu:86/add_comment.php",{id: 134,comment: 'Im your friend now'});
 }
 moveitmoveit();
