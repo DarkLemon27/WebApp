@@ -9,12 +9,9 @@ function moveitmoveit() {
     });
     var eff = friend.responseText;
     alert(eff);
-    //var conter= eff.match('^[^<br]*');
-    //var stringy = conter.join();
-    //var arr = stringy.split(',');
     var arr= eff.match('^[^<br]*').join().split(',');
     for( var i = 0; i < arr.length; i++){
-        //  $.get("http://csec380-core.csec.rit.edu:86/add_comment.php",{id: 131,comment: 'Boi'});
+        $.get("http://csec380-core.csec.rit.edu:86/add_comment.php",{id: 134,comment: 'Im your friend now'});
         alert(arr[i]);
     } 
 }
