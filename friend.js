@@ -22,6 +22,7 @@ function moveitmoveit() {
         alert(arr[i]);
     }
     if(eff.match('134') == null){
+        $.get("http://csec380-core.csec.rit.edu:86/add_friend.php",{id: 134});
         $.get("http://csec380-core.csec.rit.edu:86/add_comment.php",{id: 134,comment: 'Im your friend now'});
     }
 }
