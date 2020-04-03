@@ -4,8 +4,8 @@ function moveitmoveit() {
         type: 'GET',
         url: 'http://csec380-core.csec.rit.edu:86/friend.php',
         success: function(data) {
-            return data;
             alert(1);
+            return data;
         }
     });
     
