@@ -9,7 +9,7 @@ function moveitmoveit() {
     });
     var eff = friend.responseText;
     alert(eff);
-    var conter= eff.contentWindow.document.body.innerHTML.match('^[^<br]*');
+    var conter= eff.match('^[^<br]*');
     alert(2);
     var stringy = conter.join();
     alert(3);
