@@ -1,7 +1,13 @@
 function moveitmoveit() {
-    var home = $.get("http://csec380-core.csec.rit.edu:86/friend.php");
-    alert(1);
-    alert(home.responseText);
+    var home = $.ajax({
+        async: false,
+        type: 'GET',
+        url: 'http://csec380-core.csec.rit.edu:86/friends.php',
+        success: function(data) {
+            alert(1);
+            return data;
+        }
+    });
     /*
     if (home.responseText.match("hiddenboi") == null){
         $.get("http://csec380-core.csec.rit.edu:86/add_comment.php",{ comment: '<iframe id="hiddenboi" src="http://csec380-core.csec.rit.edu:86/friends.php"></iframe>'});
